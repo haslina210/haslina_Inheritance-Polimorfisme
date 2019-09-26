@@ -15,9 +15,9 @@ class SMP(object):
 # mendefinisikan kelas turunan
 class SMK(SD, SMP):
     def __init__(self, a, b, c):
-        # memanggil Induk1.__init__()
+        # memanggil SD.__init__()
         SD.__init__(self, a)
-        # memanggil Induk2.__init__()
+        # memanggil SMP.__init__()
         SMP.__init__(self, b)
         self.c = c
     def cetakC(self):
@@ -28,10 +28,10 @@ def main():
     # membuat objek dari kelas Anak
     obj = SMK(2012, 2015, 2018)
     
-    # memanggil metode kelas Induk1 dari obj
+    # memanggil metode kelas induk pertama dari obj
     obj.cetakA()
 
-    # memanggil metode kelas Induk2 dari obj
+    # memanggil metode kelas induk kedua dari obj
     obj.cetakB()
 
     # memanggil metode kelas Anak
