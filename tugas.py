@@ -37,4 +37,5 @@ def main():
     # memanggil metode kelas Anak
     obj.cetakC()
 
-if __name__ == "__main__":   main()
+if __name__ == "__main__":
+    main()
